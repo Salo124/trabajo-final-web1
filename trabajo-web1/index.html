@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo web1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/sinTitulo.png" alt="logo empresa" class="logo">
+        <h1> Salo Tortas</h1>
+    </header>
+    <nav>
+        <a href="#login-form" class="smooth-scroll">Inicio</a>
+        <a href="#productos" class="smooth-scroll">Productos</a>
+        <a href="#tienda" class="smooth-scroll">Tiendas</a>
+        <a href="#contacto" class="smooth-scroll">Contactanos</a>
+    </nav>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="/img/ferreroCake.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="/img/fresaCake.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="img/vainillaCake.jpg" alt="" class="slider__img">
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+    </div>
+  <script src="js/web.js"></script>
+
+    </div>
+    <div id="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" onclick="login()"class='toggle-btn'>
+                    Iniciar
+                </button>
+                <button type="button" onclick="register()" class="toggle-btn">
+                    registrate
+                </button>
+            </div>
+        <form id="login" class="input-group-login">
+            <input type="text" class="input-field" placeholder="Email" required>
+            <input type="password" class="input-field" placeholder="Ingresa Contraseña" required> <br>
+            <input type="checkbox" class="checkbox"> <samp>Recordar contraseña</samp><br>
+            <button type="submit" class="submit-btn">
+                login
+            </button>
+        </form>
+        <form id="register" class="input-group-register">
+            <input type="text" class="input-field" placeholder="Nombre" required>
+            <input type="text" class="input-field" placeholder="Apellido" required>
+            <input type="email" class="input-field" placeholder="Email " required>
+            <input type="password" class="input-field" placeholder="Crear Contraseña" required><br>
+            <input type="checkbox" class="check-box"> <samp>Acepto todos los terminos</samp>
+            <button type="submit" class="submit-btn">
+                Registrar
+            </button>
+        </form>
+    </div>
+   </div>
+</div>
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register() {
+        
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login(){
+
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event){
+
+        if (event.target == modal){
+            modal.style.display = "none";
+        }
+    }
+</script>
+    <section1 id="productos">
+        <h4>
+            PRODUCTOS:<br>
+            Tenemos tortas tradicionales de varios sabores como lo son chocolate, vainilla,<br>
+             maria luisa o red velvet, tambien tenemos a la venta tortas refrigeradas como la tradicional <br>
+             de tres leches,chocofresa, milo o melocotón y por supuesto tenemos tortas especiales con<br>
+             decorados personalizados.<br>
+            En nuestro catalogo tambien encontraras postres de distintos sabores como lo son brownie,<br>
+            galleta oreo, fresa, maracuya mora y tres leches.<br><br>
+    
+    
+        </h4> 
+    </section1>
+    <section2 id="tienda">
+        <h4>
+            NUESTRAS TIENDAS:<br>
+            nuestras tiendas estan localizadas en:<br><br>
+            BELLO:<br>
+            cra 54 #31-21a Barrio Obrero <br>
+            cra 21 #16-45 Cabañas<br>
+            cl 12 #26-31 El Trapiche<br><br>
+            MEDELLIN:<br>
+            cl 37 #19-23 Belen<br>
+            cra 30 #21-34 Poblado<br>
+        </h4>
+    </section2>
+    <section3 id="contacto">
+        <h4>
+            CONTACTANOS:<br>
+            Tel: 315679302<br>
+            Correo: salotortas@gmail.com<br>
+            Instagram: salo_tortas1<br>
+
+        </h4>
+    </section3>
+    <footer>
+        <h3>diseñado por Salome Cadavid <p>&#128151;</p></h3>
+        <h5> 2024 </h5>
+        <h6>pongame 5 profe <p>&#128591;</p></h6>
+    </footer>
+</body>
+
+</html>
