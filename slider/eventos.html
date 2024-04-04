@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div>
+
+        <img id="img" src="img/waves.jpg" alt="rubis">
+
+    </div>
+
+    <button onclick="cambiarimagen"></button>
+    cambiar Imagen
+
+    <button onclick="cambiarimagen2"></button>
+    cambiar Imagen
+    <main>
+
+
+        <section>
+            <h2 id="h2" onclick="CambiarTitulo(this),cambiarcolortitulo(),cambiartamañotitulo()">
+                titulo lo podemos....
+                <br>
+                <br>
+
+                <button onclick="cambiarRed()">
+                    Rojo
+
+                </button>
+                <br>
+                <br>
+
+                <button onclick="cambiarwhite()">
+                    Blanco
+                </button>
+                <br>
+                <br>
+
+                <button onclick="cambiarpurple()">
+                    Rojo
+                </button>
+            </h2>
+        </section>
+    </main>
+
+</body>
+
+<script>
+
+    function CambiarTitulo(titulo) {
+
+        titulo.innerHTML = 'cambiar'
+    }
+
+    function cambiarcolortitulo(titulo) {
+        document.getElementById("h2").style.color = 'blue'
+
+    }
+
+    function cambiartamañotitulo(titulo) {
+        document.getElementById("h2").style.fontSize = '34px'
+
+    }
+
+    function cambiarRed() {
+        document.getElementById("fondo").style.backgroundColor = "red"
+
+
+
+    }
+
+    function cambiarwhite() {
+
+        document.getElementById("fondo").style.backgroundColor = "white"
+
+    }
+
+    function cambiarpurple() {
+
+        document.getElementById("fondo").style.backgroundColor = "purple"
+
+    }
+
+    function cambiarimagen() {
+
+        document.getElementById("img").src = "img/rubis.jpg"
+    }
+
+
+    function cambiarimagen2() {
+
+        document.getElementById("img").src = "img/miguel.jpg"
+    }
+
+
+</script>
+
+</html>
